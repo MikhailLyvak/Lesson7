@@ -3,7 +3,12 @@
 
 
 # ==============================================================================
-#     Пиши свій код тут ( відчувай себе вільно щоб стерти цей комментар)
+class Person:
+    def __init__(self, first_name, last_name) -> None:
+        self.first_name = first_name 
+        self.last_name = last_name
+    def __str__(self):
+        return f"Всім привіт, мене звати {self.first_name} {self.last_name} "
 # ==============================================================================
 
 
