@@ -3,10 +3,19 @@
 
 
 # ==============================================================================
-#     Пиши свій код тут ( відчувай себе вільно щоб стерти цей комментар)
+class Person:
+    
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+    
+    def __str__(self) -> str:
+        return self.first_name + ' ' + self.last_name
+        
 # ==============================================================================
 
 
 # Для перевірки
 person = Person(first_name="Михайло", last_name="Ливак")
 print(person)
+
